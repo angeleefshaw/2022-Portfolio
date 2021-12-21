@@ -1,0 +1,440 @@
+* {
+  max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Nav bar, content, and logo */
+
+
+nav {
+    width: -webkit-fill-available;
+    height: 50px;
+    align-items: center;
+    min-height: 8vh;
+} 
+
+nav ul {
+    display: flex;
+    float: right;
+    justify-content: space-between; 
+    padding: 0 20px;
+    list-style: none;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1.5px; 
+}
+  
+nav a {
+    background-color: unset;
+    text-decoration: none;
+    display: inline-block; 
+    padding: 0 20px;
+    font-size: 1.25em;
+    align-items: center;
+    margin-top: 10px;
+    color: dimgray;
+}
+  
+ul li a {
+    transition: all 0.3s ease 0s;
+    color:#6B6A71;
+    margin-left: 10px;
+}
+
+nav a:hover {
+    color:cornflowerblue;
+    transition: all 0.3s ease 0s;
+    font-family: 'Roboto Mono', monospace;  
+}
+
+.burger{
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: black;
+}
+
+.button-1 button{
+    display: flex;
+    float: left;
+    border: none;
+    border-radius: 70px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    background-color: ghostwhite;
+    font-family: 'Bebas Neue', cursive;   
+}
+
+
+
+
+
+/* intro section*/
+
+.intro {
+  display: flex;
+  align-items: center;
+}
+
+.banner-div {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Quicksand', sans-serif; 
+  height: 100px;
+  font-size: .5rem;
+}
+
+h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bolder;
+  letter-spacing: 1.5px; 
+  padding-bottom: 15px; 
+  font-size: 4rem;  
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+/* About me section  */
+h2 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2.5em; 
+  text-align: center;
+}
+
+.contents {
+  height: 600px;
+  background: rgba(245, 245, 245, 0.671)
+}
+
+.first-section {
+  padding: 20px;
+  flex-direction: row;
+
+}
+
+#about p {
+  display: flex;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 40px;
+  font-size: 1.25rem;
+  margin-top: .5rem;
+}
+
+.skill-list {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.5rem;
+  display: flex; 
+  flex-direction: column; 
+  margin-top: 150px;  
+}
+
+.arrow {
+  color: cornflowerblue; 
+  font-weight: 900;
+}
+
+
+
+
+
+/*projects*/
+.project-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  column-gap: 3rem;
+  padding: 60px;
+}
+
+.tripper-cont {
+  border-style: solid; 
+  margin-bottom: 2rem; 
+  display: flex; 
+  flex-direction: row; 
+  height: 220px;
+
+}
+
+.button {
+  background-color:grey; 
+  font-family:'Roboto Mono', monospace; 
+  border-style: none;
+  text-decoration: none  !important;
+  padding: 4px;
+  border-radius: 5px;
+  color: aliceblue;
+  margin-bottom: 10px;
+  
+}
+
+.proj-title {
+  font-size: 30px; 
+  font-family: 'Roboto Mono', monospace;
+}
+
+.proj-desc {
+  font-family:'Quicksand', sans-serif;
+}
+
+.project-media {
+  padding: 20px; 
+  display: flex; 
+  flex-direction: column;  
+  margin-top: 18px;
+}
+
+
+
+/* contact info and buttons section */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  margin: 0;
+  margin: 0 30px 0 50px;
+}
+
+#contact h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#section-three {
+  display: flex;;
+  padding: 100px 40px 0 40px;
+  font-family: 'Quicksand', sans-serif;
+  
+}
+
+.contact-btns {
+  margin:10px
+}
+
+.github{
+  width: 60px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.instagram {
+  width:60px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.linkedin {
+  width: 70px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+ 
+
+/*mobile responsive - code mobile view*/
+@media only screen and (max-width: 600px) and (min-width: 200px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .intro {
+    width: auto;
+    height: 600px;
+    justify-content: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .banner {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inline {
+    display:none
+  }
+
+  .inline-mobile {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .first-section {
+    margin:auto;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .about {
+    width: auto;
+  }
+
+  #contact {
+    margin: auto;
+    width: auto;
+  }
+
+  .skill-list {
+    width: auto;
+    column-gap: 1rem;
+  }
+
+  .holds-buttons {
+    display: none;
+  }
+
+  .button {
+    margin: auto;
+    width: auto;
+  }
+
+  .project-container {
+    padding: 10px;
+  }
+
+  .trippercont {
+    display: flex;
+    flex-direction: column;
+  }
+  
+ .prj {
+   height: fit-content;
+ }
+
+ .proj-title {
+   font-size: 24px;
+   margin-bottom: 5px ;
+ }
+ 
+ .proj-desc {
+   font-size: .9em;
+ }
+
+ .project-media {
+   margin-top: 5px;
+ }
+
+ .trippercont {
+   border-style: solid;
+   height: 360px;
+   margin-bottom: 18px;
+   width: auto;
+ }
+
+ .button {
+   width: 100%;
+   margin-bottom: 10px;
+ }
+
+
+
+
+}
+
+@media screen and (max-width: 880px)and (min-width: 100px) {
+  .headshot {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 2000px)and (min-width: 601px) {
+
+  @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+  body {
+    overflow-x: hidden;
+   
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .inline-mobile {
+    display: none;
+  }
+
+  nav {
+    right: 0px;
+    top:8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center ; 
+   
+  }
+
+  .intro {
+    height: 800px;
+    margin-left: 60px;
+    margin-top: 60px;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 200px;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .trippercont {
+    width: 100%;
+    height: 210px;
+    border-style: solid; 
+    margin-bottom: 2rem; 
+    display: flex; 
+    flex-direction: row;
+  }
+
+  .trippercont-special {
+    height: 240px;
+  }
+
+  .holds-buttons {
+    margin-top: 30px;
+  }
+
+  
+
+
+}
+
+@media screen and (max-width: 2000px)and (min-width: 1500px) {
+  .prj {
+    margin-left: 350px;
+  }
+}
