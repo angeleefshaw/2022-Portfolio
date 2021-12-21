@@ -1,5 +1,5 @@
   ## Portfolio
-  [Check it out here!](https://angeleefshaw.github.io/2022-portfolio/ "Fullstack Portfolio")
+  [Check it out here!](https://angeleefshaw.github.io/2022-Portfolio "Fullstack Portfolio")
 
   ## Description 
   An online portfolio built to showcase my most challenging and enjoyable projects as a developer.
