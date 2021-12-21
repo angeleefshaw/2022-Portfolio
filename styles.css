@@ -79,9 +79,18 @@ section {
   }
 
   @media screen and (max-device-width: 736px) { 
-
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      width: 100%;
+    }
     .topics {
         display: none;
+    }
+    ul {
+      padding: 8px;
     }
 
 }
