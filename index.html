@@ -5,119 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Full-Stack Portfolio</title>
     <link rel="stylesheet" href="styles.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto+Mono:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=BenchNine:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-      <section id="intro">
-        <h1 style="margin-bottom: 30px;">Angelee Shaw</h1>
-        <p>I am a full-stack developer located in Charlotte, North Carolina. 
+    <main class="flex-auto mt-20 container">
+      <section id="intro" class="mb-14 sm:w-2/3">
+        <h1 class="mb-10 text-5xl font-semibold">Angelee Shaw</h1>
+        <p class="text-2xl">I am a full-stack developer located in Charlotte, North Carolina. 
           I currently write code accross the stack for <a href="https://bizjournals.com">American City Business Journals</a> 
-          using Javascript and PHP.
+          using <span class="font-semibold">Javascript</span> and <span class="font-semibold">PHP</span>.
         </p>
-        <div class="skill-container">
-          <div class="skill-list">
+        <div class="columns-2 mt-4">
+          <div class=" flex flex-col font-bold" >
             <span> <span class="arrow">&#187;</span> PHP</span>
             <span> <span class="arrow">&#187;</span> Typescript</span>
             <span> <span class="arrow">&#187;</span> Javascript</span>
           </div>
-          <div class="skill-list">
+          <div class="flex flex-col font-bold">
               <span> <span class="arrow">&#187;</span> VueJs</span>
               <span> <span class="arrow">&#187;</span> Node</span>
               <span> <span class="arrow">&#187;</span> MySQL</span>
           </div>
         </div>
       </section>
-      <section>
-        <h3 style="margin-bottom: 20px;"><span style="color: cornflowerblue;"> 02.</span> Projects</h3>
-        <div class="trippercont">
-          <div class="proj-section">
-              <h6 class="proj-title">Interview Mania</h6>
-              <p class="proj-desc">A full-stack code quiz application built with React. 
-                This MERN application was built to prepare users for coding interviews. 
-                The application offers users access to multiple choice quizzes on popular coding languages.
-              </p>
-              <div class="holds-buttons">
-                  <a class="topics">React</a>
-                  <a class="topics">heroku</a>
-                  <a class="topics">nodejs</a>
-                  <a class="topics">mysql</a>
-                  <a class="topics">sequelize ORM</a> 
-              </div>
-          </div> 
-          <div class="prj">
-            <div class="project-media">
-              <button class="button"><a href="https://interview-mania.herokuapp.com/" target="blank" style="text-decoration: none; color:ghostwhite">Live Site</a> </button>
-              <button class="button"><a href="https://github.com/angeleefshaw/interview-mania.git" target="blank" style="text-decoration: none; color:ghostwhite">Github Repo</a> </button>
-            </div>
-          </div>
+      <section id="projects" class="mb-14">
+        <h3 class="mb-6 text-4xl"><span style="color: cornflowerblue;"> 02.</span> Projects</h3>
+        <div class="trippercont sm:w-2/3">
+          <div class="topics holds-buttons pt-4 text-slate-100 text-sm">
+            <a class="px-6 py-2 mr-5 bg-zinc-400 rounded">angular</a>
+            <a class="px-6 py-2 mr-5 bg-zinc-400 rounded">RxJs</a>
+            <a class="px-6 py-2 mr-5 bg-zinc-400 rounded">scss</a>
+            <a class="px-6 py-2 mr-5 bg-zinc-400 rounded">html</a>  
         </div>
-        <div class="trippercont">
           <div class="proj-section">
-              <h5 class="proj-title">Kanban Board</h5>
-              <p class="proj-desc">A simple front-end Angular application built with Rxjs. 
+              <h5 class="proj-title pb-3">Kanban Board</h5>
+              <p class="proj-desc">
+                A simple front-end Angular application built with Rxjs. 
                 This application allows users to create, update, and delete tasks. 
                 It offers the ability to move tasks across the Kanban Board.
               </p>
-              <div class="holds-buttons">
-                  <a class="topics">angular</a>
-                  <a class="topics">RxJs</a>
-                  <a class="topics">scss</a>
-                  <a class="topics">html</a>  
-              </div>
           </div> 
           <div class="prj">
           <div class="project-media">
-              <button class="button"><a href="https://angeleefshaw.github.io/kanban/" target="blank" style="text-decoration: none; color:ghostwhite">Live Site</a> </button>
-              <button class="button"><a href="https://github.com/angeleefshaw/kanban" target="blank" style="text-decoration: none; color:ghostwhite">Github Repo</a> </button>
+              <button class="button text-light">
+                <a href="https://angeleefshaw.github.io/kanban/" target="blank" style="text-decoration: none;">
+                  Live Site
+                </a> 
+              </button>
+              <button class="button text-light">
+                <a href="https://github.com/angeleefshaw/kanban" target="blank" style="text-decoration: none;">
+                  Github Repo
+                </a> 
+              </button>
           </div>
           </div>
         </div>
-        <div class="trippercont">
+        <div class="trippercont sm:w-2/3">
+          <div class="topics holds-buttons pt-4 text-slate-100 text-sm">
+            <span class="px-6 py-2 mr-5 bg-zinc-400 rounded">javascript</span>
+            <span class="px-6 py-2 mr-5 bg-zinc-400 rounded">CSS</span>
+            <span class="px-6 py-2 mr-5 bg-zinc-400 rounded">html</span>
+          </div>
           <div class="proj-section">
-              <h5 class="proj-title" >Password Generator</h5>
-              <p class="proj-desc">This front-end application generates random passwords. Specify number of characters, letter casing, and allowment of special characters and numbers.</p>
-              <div class="holds-buttons">
-                  <a class="topics">javascript</a>
-                  <a class="topics">CSS</a>
-                  <a class="topics">html</a>
-                    
-              </div>
-               
+              <h5 class="proj-title pb-3" >Password Generator</h5>
+              <p class="proj-desc">
+                This front-end application generates random passwords. Specify number of characters, 
+                letter casing, and allowment of special characters and numbers.
+              </p>
           </div>
           <div class="prj">
           <div class="project-media">
-              <button class="button"><a href="https://angeleefshaw.github.io/Password-Generator/" target="blank" style="text-decoration: none; color:ghostwhite">Live Site</a></button>
-              <button class="button"><a href="https://github.com/angeleefshaw/Password-Generator" target="blank" style="text-decoration: none; color:ghostwhite">Github Repo</a></button>
+              <button class="button text-light"><a href="https://angeleefshaw.github.io/Password-Generator/" target="blank" style="text-decoration: none;">Live Site</a></button>
+              <button class="button text-light"><a href="https://github.com/angeleefshaw/Password-Generator" target="blank" style="text-decoration: none;">Github Repo</a></button>
           </div>
           </div>
       </div>
       </section>
-      <section id="about">
-        <h3 style="margin-bottom: 20px;"><span style="color: cornflowerblue;"> 03.</span> About Me</h3>
-        <p class="about-para"> 
-          My goal for the year to come is to strengthen my understanding of full-stack development in a professional environment. 
-          Outside of coding, my interests include painting in my makeshift studio and longboarding/biking around town.
+      <section id="about" class="mb-14 sm:w-2/3">
+        <h3 class="text-4xl mb-6">
+          <span style="color: cornflowerblue;"> 03.</span> 
+          About Me
+        </h3>
+        <p style="font-size:16px"> 
+          I am a self taught full stack developer writing code in <span class="font-semibold">Javascript 
+          </span>and<span class="font-semibold">PHP</span>. My passion for Javascript has been refined 
+          in the past two years through the use of <span class="font-semibold">NodeJs</span>, 
+          <span class="font-semibold">Angular</span> and <span class="font-semibold">VueJS</span>. 
+          I have also worked with many web development technologies such as <span class="font-semibold">
+          Bootstrap</span>, <span class="font-semibold">TailwindCSS</span>, Piano and 
+          <span class="font-semibold">Google Ad Manager</span>. I have now set my sights on 
+          software development and spend the afternoons writing algorithims while learning Java in tandem.
+        </p>
+        <p style="font-size:16px" class="mt-4">
+          Ultimately, I love to learn and have found a place in the tech world that never fails 
+          to satisfy that curiosity and hunger for growth.
         </p>
       </section>
-      <footer>
-        <section>
-          <h3 style="margin-bottom: 20px;"><span style="color: cornflowerblue;"> 04.</span> Contact</h3>
-          <ul>
-            <li> Email: angeleefshaw@gmail.com</li>
-            <li> Resume:  <a href="assets/documents/AngeleeShaw- resume.pdf" download="angelee-shaw-resume">Download The pdf</a></li>
-            <li> Github: <a href="https://github.com/angeleefshaw">https://github.com/angeleefshaw</a></li>
-            <li> LinkedIn: <a href="https://www.linkedin.com/in/angeleeshaw/">https://www.linkedin.com/in/angeleeshaw/</a></li>
-          </ul>
-        </section>
-    </footer>
+      <section id="contact" class="mb-14">
+        <h3 class="text-4xl mb-6">
+          <span style="color: cornflowerblue;"> 04.</span> 
+          Contact
+        </h3>
+        <ul class="text-2xl">
+          <li> Email: angeleefshaw@gmail.com</li>
+          <li> Resume:  <a href="assets/documents/AngeleeShaw- resume.pdf" download="angelee-shaw-resume">Download The pdf</a></li>
+          <li> Github: <a href="https://github.com/angeleefshaw">https://github.com/angeleefshaw</a></li>
+          <li> LinkedIn: <a href="https://www.linkedin.com/in/angeleeshaw/">https://www.linkedin.com/in/angeleeshaw/</a></li>
+        </ul>
+      </section>
     </main>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
